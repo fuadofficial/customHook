@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 export const useLocalStorage = (key) => {
+
+    const [value, setValue] = useState('')
+
 
     const setItem = (value) => {
         try {
@@ -6,6 +11,7 @@ export const useLocalStorage = (key) => {
         } catch (error) {
             console.log(error)
         }
+        setValue('')
     }
 
     const getItem = () => {
@@ -15,6 +21,7 @@ export const useLocalStorage = (key) => {
         } catch (error) {
             console.log(error)
         }
+        setValue('')
     }
 
     const deleteItem = () => {
@@ -23,7 +30,8 @@ export const useLocalStorage = (key) => {
         } catch (error) {
             console.log(error)
         }
+        setValue('')
     }
 
-    return { getItem, setItem, deleteItem }
+    return {value,setValue, getItem, setItem, deleteItem }
 }
