@@ -1,6 +1,7 @@
 import React from 'react'
-import DirectionComponent from './components/DirectionComponent'
+// import DirectionComponent from './components/DirectionComponent'
 // import Button from './components/Button'
+import LocalStorage from './components/LocalStorage'
 
 const App = () => {
   return (
@@ -9,10 +10,10 @@ const App = () => {
       {/* <Button /> */}
 
       {/* task 9.2 */}
-      <DirectionComponent />
+      {/* <DirectionComponent /> */}
 
       {/* task 9.3 */}
-
+      <LocalStorage />
     </div>
   )
 }
