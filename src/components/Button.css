@@ -1,8 +1,21 @@
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color:blueviolet;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  width: 100%;
+  height: 700px;
+  background-color: SlateBlue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.container h1 {
+  font-size: 50px;
 }
